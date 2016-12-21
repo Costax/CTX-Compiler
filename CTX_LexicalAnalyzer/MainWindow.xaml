@@ -1,0 +1,26 @@
+﻿<Window x:Class="CTX_LexicalAnalyzer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CTX_LexicalAnalyzer"
+        xmlns:avalonedit="http://icsharpcode.net/sharpdevelop/avalonedit"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="511.6" Width="833">
+    <Grid>
+        <Label x:Name="label" Content="CTX Lexical Analyzer" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnLoadFile" Content="Browse file" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="75" Click="btnLoadFile_Click"/>
+        <Label x:Name="lblFileName" Content="" HorizontalAlignment="Left" Margin="90,38,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Input" Margin="10,65,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.521,0.727" HorizontalAlignment="Left" Width="38"/>
+        <Label x:Name="label2" Content="Token List" Margin="10,251,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="81"/>
+        <Label x:Name="label2_Copy" HorizontalContentAlignment="Right" Content="Console Output" Margin="632,333,37.4,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2_Copy1" HorizontalContentAlignment="Right" Content="Syntax Analisis" Margin="365,65,357.4,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbConsoleOutput" Margin="0,364,19.4,19.4" TextWrapping="Wrap"  VerticalScrollBarVisibility="Auto" IsReadOnly="True" HorizontalAlignment="Right" Width="322"/>
+        <avalonedit:TextEditor x:Name="tbInput" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto" IsReadOnly="True" ShowLineNumbers="True" Margin="10,96,0,0" BorderBrush="#FFABADB3" BorderThickness="1" HorizontalAlignment="Left" Width="298" Height="156" VerticalAlignment="Top"/>
+        <avalonedit:TextEditor x:Name="tbOutput" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto" IsReadOnly="True" ShowLineNumbers="True"  Margin="10,277,0,19.4" BorderBrush="#FFABADB3" BorderThickness="1" HorizontalAlignment="Left" Width="298"></avalonedit:TextEditor>
+        <avalonedit:TextEditor x:Name="tbSyntax" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto" IsReadOnly="True" ShowLineNumbers="True" Margin="325,96,357.4,19.4" BorderBrush="#FFABADB3" BorderThickness="1"/>
+        <avalonedit:TextEditor x:Name="tbSemantic" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto" IsReadOnly="True" ShowLineNumbers="True" Margin="0,96,19.4,0" BorderBrush="#FFABADB3" BorderThickness="1" Height="232" VerticalAlignment="Top" HorizontalAlignment="Right" Width="322"/>
+        <Label x:Name="label2_Copy2" HorizontalContentAlignment="Right" Content="Semantic Analysis" Margin="632,65,36.4,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
